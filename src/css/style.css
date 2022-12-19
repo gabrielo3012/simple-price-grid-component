@@ -1,0 +1,113 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background: hsl(204, 43%, 93%);
+  font-family: 'Karla', sans-serif;
+  font-size: 1.6rem;
+}
+
+.wrapper {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+}
+
+.card-container {
+  max-width: 950px;
+  background-color: aqua;
+  overflow: hidden;
+  border-radius: 8px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "join-info join-info"
+                       "subscription list";
+}
+
+.join-info {
+  grid-area: join-info;
+  background: #fff;
+  padding: 40px 40px 45px 40px;
+}
+
+.join-info h1 {
+  font-size: 2.4rem;
+  color: hsl(179, 62%, 43%);
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.join-info h3 {
+  color: hsl(71, 73%, 54%);
+  margin-bottom: 15px;
+  font-weight: 700;
+  font-size: 1.8rem;
+}
+
+.join-info p {
+  color: hsl(218, 22%, 67%);
+}
+
+.join-info p:last-child {
+  margin-top: 5px;
+}
+
+.subscription {
+  grid-area: subscription;
+  background: hsl(179, 62%, 43%);
+  color: hsl(204, 43%, 93%);
+  padding: 40px 40px 40px 40px;
+}
+
+.subscription h3 {
+  margin-bottom: 20px;
+}
+
+.subscription .price {
+  font-size: 3.4rem;
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+  font-weight: 700;
+}
+
+.subscription span {
+  font-size: 1.6rem;
+  margin-left: 10px;
+  color: hsl(204, 43%, 93%);
+  font-weight: 400;
+}
+
+.subscription .info {
+  margin-bottom: 30px;
+}
+
+.subscription .btn {
+  background: hsl(71, 73%, 54%);
+  color:  #fff;
+  padding: 14px 90px;
+  border-radius: 6px;
+  display: block;
+  width: 100%;
+  text-align: center;
+  box-shadow: .1rem .1rem .9rem .2rem  rgba(92, 90, 90, 0.25);
+}
+
+.list {
+  grid-area: list;
+  background: hsl(180, 47%, 51%);
+  color: hsl(204, 43%, 93%);
+  padding: 40px;
+}
+
+.list h3 {
+  margin-bottom: 20px;
+}
+
+.list li {
+  font-size: 1.4rem;
+  line-height: 1.4;
+}

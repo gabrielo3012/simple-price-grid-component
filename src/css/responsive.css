@@ -1,0 +1,9 @@
+@media (max-width: 650px) {
+  .card-container {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+                "join-info"
+                "subscription"
+                "list"      ;
+  }
+}
